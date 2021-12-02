@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <h1>Tambah Data Pahla</h1>
+  <h1>Tambah Data Pahlawan</h1>
 
   <form action="/pahlawan" method="POST">
     <div class="form-group">
