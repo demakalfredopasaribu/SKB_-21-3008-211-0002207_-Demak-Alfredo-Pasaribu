@@ -34,6 +34,7 @@ class ArticleController extends Controller
       $pahlawan->domisili = "domisili";
       $pahlawan->tanggal_wafat = "tanggal_wafat";
       $pahlawan->piagam_penghargaan = "piagam_penghargaan";
+      $pahlawan->id = "id";
       $pahlawan->save();
 
       $pahlawans = Article::paginate(5);
