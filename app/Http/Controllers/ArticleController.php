@@ -23,4 +23,10 @@ class ArticleController extends Controller
     {
       return view ('article.create');
     }
+
+    public function index_pahlawan()
+    {
+      $articles = Pahlawan::paginate(5);
+      return view('article.index', compact('articles'));
+    }
 }
