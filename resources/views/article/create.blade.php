@@ -3,7 +3,7 @@
 @section('content')
   <h1>Bikin Artikel Baru</h1>
 
-  <form action="">
+  <form action="/pahlawan" method="POST">
     <div class="form-group">
       <label for="nama">Nama</label>
       <input type"text" class="form-control" id="nama" name="nama">

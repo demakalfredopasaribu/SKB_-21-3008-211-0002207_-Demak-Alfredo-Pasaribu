@@ -19,4 +19,6 @@ Route::get('/', function () {
 
 Route::get('/profile', 'App\Http\Controllers\ArticleController@index');
 Route::get('/profile/create', 'App\Http\Controllers\ArticleController@create');
+Route::get('/pahlawan', 'App\Http\Controllers\ArticleController@index_pahlawan');
 Route::get('/artikel/{slug}', 'App\Http\Controllers\ArticleController@show');
+Route::post('/pahlawan', 'App\Http\Controllers\ArticleController@index_create');

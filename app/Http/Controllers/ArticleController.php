@@ -21,12 +21,24 @@ class ArticleController extends Controller
 
     public function create()
     {
+
       return view ('article.create');
     }
 
     public function index_pahlawan()
     {
-      $articles = Pahlawan::paginate(5);
-      return view('article.index', compact('articles'));
+      $pahlawan = new Article;
+      $pahlawan->nama = "nama";
+      $pahlawan->alamat = "alamat";
+      $pahlawan->tanggal_lahir = "tanggal_lahir";
+      $pahlawan->domisili = "domisili";
+      $pahlawan->tanggal_wafat = "tanggal_wafat";
+      $pahlawan->piagam_penghargaan = "piagam_penghargaan";
+      $pahlawan->save();
+
+      $pahlawans = Article::paginate(5);
+      return view('article.pahlawan', compact('pahlawans'));
+
+
     }
 }
